@@ -1,0 +1,17 @@
+{
+  "name": "skype-history",
+  "version": "1.0.0",
+  "description": "View Skype chat history in web browser. Workaround for Linux skype chat history bug.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "skype"
+  ],
+  "author": "Markus Mulkahainen",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
