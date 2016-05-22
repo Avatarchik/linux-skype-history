@@ -4,7 +4,8 @@
   "description": "View Skype chat history in web browser. Workaround for Linux skype chat history bug.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [
     "skype"
@@ -12,6 +13,11 @@
   "author": "Markus Mulkahainen",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "jade": "^1.11.0",
+    "sqlite3": "^3.1.4"
+  },
+  "devDependencies": {
+    "forever-monitor": "^1.7.0"
   }
 }
