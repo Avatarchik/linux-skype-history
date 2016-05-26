@@ -20,7 +20,9 @@ module.exports = function(app, skypeUsers) {
   });
 
   app.get("/", function(req, res) {
-    var html = jade.renderFile("app/views/index.jade", { users:skypeUsers.getUsers() });
-    res.send(html);
+    if (skypeUsers.getUsers().length > 0) {
+      res.redirect("/0");
+    }
+    res.send("No skype users found");
   });
 }
