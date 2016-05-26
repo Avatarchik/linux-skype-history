@@ -1,3 +1,6 @@
 select
   each skypeUser in users
-    option(value=skypeUser.id)= skypeUser.name
+    if skypeUser.id == selectedUser.id
+      option.userOption(value=skypeUser.id selected="true")= skypeUser.name
+    else
+      option.userOption(value=skypeUser.id)= skypeUser.name
