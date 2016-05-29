@@ -1,4 +1,4 @@
-select
+select(id="userSelection" onchange="skypeUserSelectionChanged()")
   each skypeUser in users
     if skypeUser.id == selectedUser.id
       option.userOption(value=skypeUser.id selected="true")= skypeUser.name
