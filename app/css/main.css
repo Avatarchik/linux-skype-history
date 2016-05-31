@@ -1,0 +1,20 @@
+#container {
+	margin-top: 10px;
+}
+
+#contacts {
+	display:inline-block;
+	width: 10%;
+	vertical-align: top;
+	margin-top: 17px;
+}
+
+#messages {
+	display:inline-block; 
+	margin-left: 30px;
+	width:87%;
+}
+
+#contacts button {
+	width: 100%;
+}
