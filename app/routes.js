@@ -1,5 +1,7 @@
 var jade = require("jade");
 var messageRepository = require("./messageRepository.js");
+var Entities = require('html-entities').XmlEntities;
+var entities = new Entities();
 
 module.exports = function(app, skypeUsers) {
 
@@ -14,6 +16,7 @@ module.exports = function(app, skypeUsers) {
         if (err) {
           console.log(err.message);
         }
+        messages.filter(message => message.msg !== null).forEach(message => message.msg = entities.decode(message.msg));
         var html = jade.renderFile("app/views/index.jade", { users: skypeUsers.getUsers(), selectedUser: selectedUser, contacts: contacts, messages: messages });
         res.send(html);
       });
