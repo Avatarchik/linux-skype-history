@@ -8,6 +8,7 @@ module.exports = function() {
     fs.readdir(SKYPE_DIR_PATH, function(err, files) {
       if (err) {
         callback([]);
+        return;
       }
 
       callback(files
