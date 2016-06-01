@@ -9,8 +9,12 @@
 	margin-top: 17px;
 }
 
+#messages span {
+  font-weight: bold;
+}
+
 #messages {
-	display:inline-block; 
+	display:inline-block;
 	margin-left: 30px;
 	width:87%;
 }
